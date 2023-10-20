@@ -5,6 +5,7 @@ import cookieParser from "cookie-parser"
 import taskRoutes from "./routes/tasks.routes.js"
 import clientesRoutes from "./routes/clientes.routes.js"
 import repuestosRoutes from "./routes/repuestos.routes.js"
+import comprasRoutes from "./routes/compras.routes.js"
 import cors  from 'cors'
 
 const app = express()
@@ -28,5 +29,6 @@ app.use("/api",authRoutes)
 app.use("/api", taskRoutes)
 app.use("/api", clientesRoutes)
 app.use("/api", repuestosRoutes)
+app.use("/api", comprasRoutes)
 
 export default app;
